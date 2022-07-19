@@ -1,0 +1,47 @@
+mkdir --> make directory
+cd --> change directory
+pwd --> show folder location
+dir --> show everything in the folder
+rm --> Remove
+
+git init --> create new git
+git status --> folder in it 
+git add --> add to the box
+git commit -m '' --> close box with comment 
+only once -gif remote add --> get item from that address 
+gif push origin master --> send what we have
+git checckout. --> restore to lastcommit
+touch main.css --> create new object 
+
+git clone <http://github..>
+cd git_tuto/
+ls --> list of folder in directory
+pwd -> check local path 
+
+cd ../ --> chng directory
+
+Get an object from git after update
+     git pull origin main
+
+     From https://github.com/tutorialzine/awesome-project
+     * branch            main     -> FETCH_HEAD
+     Already up-to-date.
+
+
+
+
+
+MOvies list
+ 
+The Duellists
+Alien
+Blade Runner
+Legend
+Black Rain
+The Last Duel
+
+Director Name:
+Ridley Scott
+
+Wikipedia link:
+https://en.wikipedia.org/wiki/Ridley_Scott
