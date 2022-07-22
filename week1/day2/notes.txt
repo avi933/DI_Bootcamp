@@ -3,6 +3,7 @@ cd --> change directory
 pwd --> show folder location
 dir --> show everything in the folder
 rm --> Remove
+mv wek1 week1 --> rename wek1 by week1
 
 git init --> create new git
 git status --> folder in it 

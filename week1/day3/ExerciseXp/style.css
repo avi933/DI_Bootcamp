@@ -1,0 +1,152 @@
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+#nav-title {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #b2dfdb;
+}
+
+.div7 {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+        }
+
+ .div7 > div { position: relative;}
+
+#div2{
+            padding: auto;
+            margin: auto;
+            margin-left: 150px;
+        }
+#Profile {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            border-radius: 50%;
+            margin: 80px 0px 80px 40px;
+            position: absolute  ;
+            padding: auto;
+            position: relative;
+            border:2px rgb(241, 241, 183) solid;
+            
+        }
+
+.image{
+            max-width: 150px;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+span {
+            margin-top: 0;
+            font-size: 14px;
+            position: relative;
+            top: -35px;
+            opacity: 0.5;}
+h2 {
+            position: relative;
+            left: 350px;
+            top: 90px;
+            font-size: 30px;
+            margin-bottom: 10px;}
+.a1 {
+            background-color:rgb(255, 255, 255) ;
+            border: 2px solid rgb(0, 106, 255);
+            color: rgb(0, 106, 255);
+            padding: 3px 10px;
+            margin-left: 15px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: 0.6s;
+            position: relative;
+            left: -15px;
+            top: -65px;
+            font-size: 12px;
+      }
+
+.a1:hover{
+            background-color: rgb(0, 106, 255);
+            color: white;
+        }
+/* for the description below, made use of grid */
+
+.grid-container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 20px;
+  height: 70px;
+}
+.item1 {
+  grid-column: 1 ;
+  grid-row : 1 ;
+  font-size: 15px;
+}
+
+.item2 {
+  grid-column: 1  ;
+  grid-row: 2;
+  background-color: darkred;
+}
+.item3 {
+  grid-column: 2 ;
+  grid-row: 1;
+  background-color: darkred;
+}
+
+.item4 {
+  grid-column: 2  ;
+  grid-row: 2;
+  background-color:yellowgreen;
+}
+
+footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  font-size: medium;
+  font-weight: bold;
+
+}

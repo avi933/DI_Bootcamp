@@ -1,0 +1,42 @@
+
+
+
+#main{
+	border: 2px solid darkred;
+	height: 250px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+
+#main div{
+	background-color: aqua;
+	border: 2px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	color: darkred;
+	font-size: large;
+	font font-weight: bold;
+	}
+	
+}
+
+p{color: whitesmoke;
+	font-size: large;
+	font font-weight: bold;}
+
+.t1{
+	height: 50px;
+	width: 100%;
+}
+
+.t2{height: 100px;
+width: 300px;}
+
+
+
+
