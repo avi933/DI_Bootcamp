@@ -68,5 +68,14 @@ console.log(f + " in " + b )
     //showing the length of the array
     console.log(" This array contains: " + animal.length + " items")
 
+//UserInterface Functions 
+     //sending a message
+       alert("Hello");
+    //asking user for input
+       let age = prompt('How old are you?', 20);
+       alert(`You are ${age} years old!`);
+    //confrimation
+        let isBoss = confirm("Are you the boss?");
+        alert(isBoss);
 
 
