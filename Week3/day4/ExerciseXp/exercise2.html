@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <style>
+          #container {
+                       width: 400px;
+                       height: 400px;
+                       position: relative;
+                       background: yellow;}
+          #animate {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    background-color: red;}
+      </style>
+ </head>
+ <body>
+
+         <p><button onclick="myMove()">Click Me</button></p>
+        
+        <div id="container">
+          
+          <div id="animate"></div>
+        </div>
+
+
+
+<script type="text/javascript">
+	
+      let box = document.getElementById('animate')
+      //box.addEventListener("click", moving)
+      let start = 0
+
+      let timer = setInterval(function() {
+      
+      	
+      	box.style.left = start++  + 'px';
+       
+      	if (start> 350) {
+          clearInterval(timer);
+                }
+      }, 50);
+    
+
+
+
+</script>
+
+</body>
+
+</html>

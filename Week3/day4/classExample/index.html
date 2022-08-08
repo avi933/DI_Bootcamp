@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ClassExample</title>
+
+
+<style> 
+ #banner{
+ 	border-style: solid;
+ 	border-width: 2px;
+ 	border-color: blueviolet;
+ 	display: none;
+ 	text-align: center;
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ }
+
+
+</style>
+
+</head>
+
+<body> 
+	<div id =  banner> 
+        <p>  </p>
+
+	</div>
+
+       <script type="text/javascript">
+
+            let i = 10
+          let timer =  setInterval(function(dis) {
+                 
+                 let x = document.getElementById('banner')
+                     x.firstElementChild.innerHTML = "Sales End in " + i + " sec"
+                     x.style.display = "block"
+                     i = i-1 
+
+                     if ( i < 0 )
+              clearInterval(timer)
+}, 1000);
+       
+       	
+       
+            
+
+       </script>
+</body>
+
+</html>

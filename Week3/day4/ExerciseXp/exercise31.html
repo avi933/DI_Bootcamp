@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+    <title>Exercise3</title> 
+    <head>
+        <style>
+        #target {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          background: yellow;
+        }
+        #box {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="target" ondrop="dragDrop(event)" ondragover="allowDrop(event)">  </div>
+        <br>
+        <div id="box" draggable="true" ondragstart="dragStart(event)" > rred</div>
+
+
+        <script type="text/javascript">
+
+            function allowDrop(event) {
+            event.preventDefault();}
+
+            function dragStart(event) {
+            event.dataTransfer.setData("text", event.target.id);}
+           
+            function dragDrop(event) {
+                let data = event.dataTransfer.getData("text");
+                  
+  
+            let box = document.getElementById(data)
+            event.target.appendChild(box);}
+
+
+        </script>
+    </body>
+    </html>

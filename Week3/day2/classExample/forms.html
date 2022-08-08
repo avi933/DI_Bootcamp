@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+
+<body>
+
+    <form id="form1" onsubmit="getvalue()"> 
+        <label>First name: </label><input type="text" name="fname" value="David"><br> 
+        <label>Last name: </label><input type="text" name="lname" value="BenGurion"><br> 
+        <input type="submit" value="Submit"> 
+    </form> 
+
+<script type="text/javascript">
+	function getvalue(e){
+	let form = document.forms.form1
+	let fname = form.elements.fname.value
+	let lname = form.elements.lname.value
+	let fullname = fname + " " + lname
+	alert(fullname)
+	e.preventDefaul()
+}
+
+
+
+</script>
+</body>
+
+</html>
