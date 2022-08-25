@@ -78,7 +78,7 @@ SELECT title
 FROM film
 INNER JOIN inventory
 ON inventory.film_id  = film.film_id
-WHERE film.film_id  not in (inventory.film_id);
+WHERE film.film_id  NOT IN (inventory.film_id);
 
 -- Write a query to find which city is in which country
 SELECT city.city , country.country
