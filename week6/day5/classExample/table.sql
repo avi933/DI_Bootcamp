@@ -1,0 +1,4 @@
+CREATE TABLE item(
+ 	item_id SERIAL PRIMARY KEY,
+ 	name VARCHAR (50) NOT NULL,
+ 	price INTEGER NOT NULL);
