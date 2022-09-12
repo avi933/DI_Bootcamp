@@ -1,0 +1,36 @@
+python manage.py runserver 8080  ("runserver")
+
+
+write in view.py in the app "polls"
+write in app so urls.py
+write in main so urls.py 
+register "app" in main so setting
+
+
+
+avithebest_20 password 
+username -> avishek
+
+
+
+ python manage.py makemigrations
+ python manage.py migrate
+ 
+
+class Animal(models.Model):
+    legs = models.IntegerField()
+    weight = models.FloatField()
+    height = models.IntegerField()
+    speed = models.FloatField()
+    # family = models.CharField(max_length=50)
+    family =models.ForeignKey(Family, on_delete=models.CASCADE)
+
+
+
+
+<div class="col-md-12">
+                <label for="inputname" class="form-label" style="font-weight: bold;"><i>
+                        Confirm Password</i></label>
+                <input type="password" placeholder="Confirm Password" style="text-align: center;"
+                    class="form-control" id="password2" name="password2" required>
+            </div>

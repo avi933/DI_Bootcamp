@@ -6,17 +6,17 @@ USERNAME = 'postgres'
 PASSWORD = '1713' #os.environ["password"]
 DATABASE = 'avi_resto'
 
-def load_manager():
-    connection = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
-    cursor = connection.cursor()
-    query = f"SELECT count('name') from item"
-    cursor.execute(query)
-    print(query)
-    results = cursor.fetchall()
-    print(results[0])
-    # item(result+1) = MenuItem(name,price)
-    # connection.commit()
-    connection.close()
+# def load_manager():
+#     connection = psycopg2.connect(host=HOSTNAME, user=USERNAME, password=PASSWORD, dbname=DATABASE )
+#     cursor = connection.cursor()
+#     query = f"SELECT count('name') from item"
+#     cursor.execute(query)
+#     print(query)
+#     results = cursor.fetchall()
+#     print(results[0])
+#     # item(result+1) = MenuItem(name,price)
+#     # connection.commit()
+#     connection.close()
 
 # this function should display the program menu
 # Call the appropriate function that matches the user’s input.
@@ -33,8 +33,11 @@ def show_user_menu():
             print("You abort the add command")
             pass
         elif confirm == "y":
-            MenuItem.save()
-            print("your item has successfully be saved")
+            m_name = input("Enter Menu Name\n")
+            m_price = input("Enter the price of ",m_name, "\n")
+            new_item = MenuItem(m_name,m_price)
+            MenuItem.save(new_item)
+            print(m_name," has successfully be saved")
         else:
             print("Error not a proper command")  
 
