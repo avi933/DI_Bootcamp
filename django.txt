@@ -7,12 +7,6 @@ write in main so urls.py
 register "app" in main so setting
 
 
-
-avithebest_20 password 
-username -> avishek
-
-
-
  python manage.py makemigrations
  python manage.py migrate
  

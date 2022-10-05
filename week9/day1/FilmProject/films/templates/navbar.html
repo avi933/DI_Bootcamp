@@ -1,0 +1,14 @@
+
+
+<nav style="background-color:lightblue;">
+<ul >
+   <h1> <li>IMBI</li></h1>
+    <li>Home</li>
+    <li>Welcome</li>
+    <li>Profile</li>
+    {% if user.is_superuser %}
+    <li><a href='/films/addDirector/'/>Add a director</a></li>
+    <li> <a href='/films/addFilm/'>Add a film</a></li>
+    {% endif %}
+</ul>
+</nav>

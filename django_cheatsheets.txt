@@ -1,0 +1,56 @@
+To install env
+	pip install virtualenv
+	
+To create a virtual environment
+	python3 -m venv "env"  where "env" is the name of the environment
+
+Activating the virtual environment
+	env\Scripts\activate , 	where "env" is the name of the virtual environment 
+
+Disactivating the vitural environment
+	deactivate
+
+starting a django project 
+	django-admin startproject "my_site" , where "my_site" is the name of the project 
+
+Creating an app, which user will use to build the site 
+	python manage.py startapp "name_of_app" , where "name_of_app" is the app name 
+	
+register the app 
+	go to the main app setting.py --> installed app , add the "app_name"
+
+To connect a database to the app:
+	python3 manage.py makemigrations
+	python3 manage.py migrate
+
+Create A Superuser/ admin panel:
+	python3 manage.py createsuperuser
+	
+	
+write in the app  views.py 
+Then create a file "urls.py" in the app
+		urlpatterns = [
+			path('', views.index, name='index'),
+			] 
+Lastly inculde the urls.py in the project urls.py 
+		from django.urls import include, path
+
+		urlpatterns = [
+			path('admin/', admin.site.urls),
+			path('polls/', include('polls.urls')),
+			]
+
+run the app using : pyhton3 manage.py runserver 
+
+
+what3words.com
+
+
+
+
+
+
+
+
+
+
